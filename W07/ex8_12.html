@@ -1,0 +1,51 @@
+<!--브라우저 사이즈 늘렸다 줄였을때 블럭 사이즈 변화-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxes</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        #main_menu {
+            width: 500px;
+            padding: 10px;
+            margin: 20px 0 0 40px;
+            background-color: #eeeeee;
+            border: solid 1px #aaaaaa;
+            text-align: center;
+        }
+        #main_menu li {
+            display: inline;
+        }
+        .green_box {
+            display: inline-block;
+            width: 150px;
+            height: 75px;
+            margin: 10px;
+            border: solid 3px #73AD21
+        }
+    </style>
+</head>
+<body>
+    <ul id="main_menu">
+        <li><a href="index.html">서울세계불꽃축제 | </a></li>
+        <li><a href="ex8_6.html">책 소개 | </a></li>
+        <li><a href="ex8_9.html">인라인과블록 | </a></li>
+        <li><a href="ex8_10.html">블록수평 | </a></li>
+        <li><a href="ex8_11.html">블록수직 | </a></li>
+        <li><a href="ex8_12.html">블록특성</a></li>
+    </ul>
+    <br><br>
+    <h2>인라인 + 블록 특성(display:inline-block)</h2>
+
+    <div class="green_box">박스 1</div>
+    <div class="green_box">박스 2</div>
+    <div class="green_box">박스 3</div>
+    <div class="green_box">박스 4</div>
+    <div class="green_box">박스 5</div>
+    <div class="green_box">박스 6</div>
+</body>
+</html>
