@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MyShelf - RecordShelf</title>
+  <link rel="stylesheet" href="../common/style.css" />
+  <link rel="stylesheet" href="../css/myshelf.css" />
+</head>
+<body>
+  <header>
+    <div class="menu-button" id="menuToggle">☰</div>
+    <nav id="menuPanel" class="menu-panel">
+      <ul>
+        <li><a href="../index.html">RecordShelf</a></li>
+        <li><a href="podcast.html">PodCast</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="toprated.html">TopRated</a></li>
+        <li><a href="myshelf.html">MyShelf</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="myshelf-container">
+    <h1>💿 My Shelf 💿</h1>
+
+    <section class="my-reviews">
+      <h2>내가 쓴 리뷰</h2>
+      <!-- JS에서 review-item 동적 생성 -->
+    </section>
+
+    <section class="my-recommend">
+      <h2>추천한 앨범</h2>
+      <div class="recommend-grid">
+        <!-- JS에서 album-card 동적 생성 -->
+      </div>
+    </section>
+
+    <footer class="player-footer">
+      <div class="player-controls">
+        <div class="left-controls">
+          <span>🎧 PLAY<</span>
+        </div>
+        <div class="center-controls">
+          <h4>Ruby - 제니</h4>&nbsp;
+          <button>⏮</button>
+          <button>⏯</button>
+          <button>⏭</button>&nbsp;
+          <h4>Summer - Taylor-Swift</h4>
+        </div>
+        <div class="right-controls">
+          <span>🔊</span>
+          <input type="range" class="volume-slider" min="0" max="100" value="60" />
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../common/script.js"></script>
+  <script src="../js/myshelf.js"></script>
+</body>
+</html>
