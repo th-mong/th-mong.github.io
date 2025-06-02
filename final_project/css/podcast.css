@@ -1,0 +1,85 @@
+.podcast-section {
+    padding: 50px 30px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #111; /* 필요 시 페이지 전체 배경과 통일 */
+  }
+  
+  .podcast-section h1 {
+    font-size: 1.8rem;
+    color: #f8d84e;
+    margin-bottom: 10px;
+  }
+  
+  .podcast-subtext {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 30px;
+  }
+  
+  /* 카드들을 가로로 정렬할 컨테이너 */
+  .podcast-container {
+    text-align: left;
+    font-size: 0; /* inline-block 사이 공백 제거 */
+  }
+  
+  /* 카드 개별 스타일 */
+  .podcast-card {
+    display: inline-block;
+    width: 320px;
+    height: 350px;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #222; /* 기본 배경, 색상 클래스가 없을 경우 */
+    font-size: 14px; /* 글자 크기 복구 */
+  }
+  
+  /* 배경 색상 테마 */
+  .podcast-card.pink {
+    background-color: #a70063;
+  }
+  
+  .podcast-card.blue {
+    background-color: #026277;
+  }
+
+  .podcast-card.orange {
+    background-color: #2f4f4f;
+  }
+
+  .podcast-card.green {
+    background-color: #2e003e;
+  }
+
+  
+  .card-text h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: white;
+    line-height: 1.4;
+  }
+  
+  .card-text .meta {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .podcast-card img {
+    width: 270px;
+    height: 170px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .summary {
+    font-size: 0.85rem;
+    color: #ddd;
+    line-height: 1.5;
+  }
+  
