@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albums - RecordShelf</title>
+  <link rel="stylesheet" href="../common/style.css" />
+  <link rel="stylesheet" href="../css/albums.css" />
+</head>
+<body>
+
+  <header>
+    <div class="menu-button" id="menuToggle">☰</div>
+    <nav id="menuPanel" class="menu-panel">
+      <ul>
+        <li><a href="../index.html">RecordShelf</a></li>
+        <li><a href="podcast.html">PodCast</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="toprated.html">TopRated</a></li>
+        <li><a href="myshelf.html">MyShelf</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>내 라이브러리</h2>
+      <div class="playlist-box">
+        <p>첫 번째 플레이리스트를 만드세요.<br><small>어렵지 않아요. 저희가 도와드릴게요.</small></p>
+        <button>플레이리스트 만들기</button>
+      </div>
+      <div class="podcast-box">
+        <p>팔로우할 팟캐스트를 찾아보세요.<br><small>새로운 에피소드에 대한 소식을 알려드릴게요.</small></p>
+        <button>팟캐스트 둘러보기</button>
+      </div>
+    </aside>
+
+    <main class="albums-main">
+      <h1>인기 앨범</h1>
+      <div id="albumContainer" class="album-grid"></div>
+    </main>
+
+    <footer class="player-footer">
+      <div class="player-controls">
+        <div class="left-controls">
+          <span>🎧 PLAY<</span>
+        </div>
+        <div class="center-controls">
+          <h4>Ruby - 제니</h4>&nbsp;
+          <button>⏮</button>
+          <button>⏯</button>
+          <button>⏭</button>&nbsp;
+          <h4>Summer - Taylor-Swift</h4>
+        </div>
+        <div class="right-controls">
+          <span>🔊</span>
+          <input type="range" class="volume-slider" min="0" max="100" value="60">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../common/script.js"></script>
+  <script src="../js/albums.js"></script>
+</body>
+</html>

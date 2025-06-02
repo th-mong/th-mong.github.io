@@ -1,0 +1,153 @@
+/* 헤더 (인트로) */
+#intro {
+  height: 100vh;
+  background: url('../img/5.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 130px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.intro-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.intro-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #f8d84e;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #e0c738;
+}
+
+/* 소셜미디어 아이콘 */
+#icons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 99;
+  margin-top: 20px;
+}
+
+#icons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+
+#icons img:hover {
+  opacity: 1;
+}
+
+/* 메뉴 패널 */
+.menu-panel ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.menu-panel ul li {
+  margin: 0 10px;
+}
+
+.menu-panel ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* 아래에서 올라올 콘텐츠 */
+.fade-in {
+  opacity: 1;
+  height: 400vh;
+  transform: translateY(0);
+  transition: none;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2; /* 인트로보다 위로 올라올 수 있게 */
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in.section-dark {
+  background-color: #111;
+  min-height: 100vh; /* 또는 높이 충분히 확보 */
+  padding-bottom: 200px; /* footer 안쪽 공간 확보 */
+  position: relative;
+  z-index: 2;
+}
+
+
+.fade-in.section-dark .text {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.fade-in.section-dark .text h2{
+  font-size: 2.5rem;
+  color: #f8d84e;
+  margin-bottom: 10px;
+}
+
+.fade-in.section-dark .text p{
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.fade-in.section-dark img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* 푸터 */
+footer {
+  margin-top: 150px;
+  text-align: center;
+  background: #000;
+  color: #888;
+  padding: 40px 0;
+}
+
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+footer ul li {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}

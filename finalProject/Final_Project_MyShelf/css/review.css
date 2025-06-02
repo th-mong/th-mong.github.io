@@ -1,0 +1,95 @@
+.review-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.review-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.album-select,
+.rating,
+.review-box {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+}
+
+.stars {
+  font-size: 2rem;
+}
+
+.star {
+  cursor: pointer;
+  color: #444; /* 빈 별은 회색 */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.star.selected {
+  color: #ffd700;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #f8d84e;
+  color: #111;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 60px;
+}
+
+.submit-btn:hover {
+  background-color: #e0c738;
+}
+
+#reviewList {
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.review-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.review-item p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.review-item .date {
+  font-size: 0.8rem;
+  color: #888;
+}
